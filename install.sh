@@ -8,6 +8,7 @@ THEME="z-bolt3.5"
 TARGET="~/KlipperScreen/styles"
 
 sudo service KlipperScreen stop
+rm -rf $TARGET/$THEME
 cp $SPATH/$THEME $TARGET
 sudo cp $SPATH/$THEME/settings.ini /etc/gtk-3.0/
 
