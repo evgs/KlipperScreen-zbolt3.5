@@ -5,7 +5,7 @@ SPATH=$(dirname "$SCRIPT")
 
 THEME="z-bolt3.5"
 
-TARGET="~/KlipperScreen/styles"
+TARGET=$HOME/KlipperScreen/styles
 
 sudo service KlipperScreen stop
 rm -rf $TARGET/$THEME
