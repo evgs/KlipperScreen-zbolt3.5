@@ -9,7 +9,7 @@ TARGET="~/KlipperScreen/styles"
 
 sudo service KlipperScreen stop
 rm -rf $TARGET/$THEME
-cp -r $SPATH/$THEME $TARGET
+cp -r $SPATH/$THEME $TARGET/
 sudo cp $SPATH/$THEME/settings.ini /etc/gtk-3.0/
 
 sudo service KlipperScreen start
