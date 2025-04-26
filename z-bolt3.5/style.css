@@ -142,43 +142,19 @@ textview .time {
     color: @lines;
 }
 
-.popup {
-    background-color: black;
-}
-
 .dialog {
     border: @bg;
     background-color: @bg;
 }
 
-.dialog button {
-    border-bottom-color: #009384;
+.horizontal_togglebuttons_active {
+    background-color: @active;
+    border-color: @color1;
+    box-shadow: 0 0 0 .2em @lines inset;
 }
 
-.dialog button:nth-child(1) {
-    border-bottom-color: #A7E100;
-}
-
-.dialog button:nth-child(2) {
-    border-bottom-color: #cc1e1e;
-}
-
-.distbutton_active {
-    background-color: #20303D;
-}
-
-.distbutton_top {
-    border-color: white;
-}
-
-.distbutton {
-    border-color: white;
-    border-left-color: #ccc;
-}
-
-.distbutton_bottom {
-    border-color: white;
-    border-left-color: #ccc;
+.horizontal_togglebuttons {
+    border-color: @lines;
 }
 
 .fan_slider {
@@ -189,29 +165,42 @@ textview .time {
     border-bottom-color: @lines;
 }
 
-.numpad_tleft, .numpad_top, .numpad_tright, .numpad_left, .numpad_button, .numpad_right, .numpad_bleft, .numpad_bottom, .numpad_bright {
-    border-color: white;
+.numpad_key {
+    border-color: @lines;
 }
 
-.printing-status {
-    color: #f0f0f0;
+.message {
+    border-color: @error;
+    color: @text;
+    background-color: @error;
 }
 
-.printing-progress-text {
-    color: white;
+.message button {
+    background-color: @text;
+    color: @text-inv;
 }
 
-.printing-status-label {
-    color: #ccc;
+.message_popup_echo {
+    background-color: @echo;
 }
 
-.tempbutton_top {
-    border-color: white;
+.message_popup_warning {
+    background-color: @warning;
 }
 
-.tempbutton, .tempbutton_bottom {
-    border-color: white;
-    border-top-color: #ccc;
+.message_popup_warning label {
+    color: @warning-text;
+}
+.message_popup_error {
+    background-color: @error;
+}
+
+.keyboard_pad {
+    background-color: @bg;
+}
+
+.dialog-error {
+    border-bottom-color: @error;
 }
 
 .dialog-warning {
