@@ -83,14 +83,17 @@ switch:checked {
     background-color: @switch-scale-bg;
 }
 
-entry {
-    background-color: #20292F;
-    border-color: #13181C;
+treeview.view check:checked {
+    -gtk-icon-source: url("./styles/z-bolt/images/complete.svg");
 }
 
+entry {
+    background-color: @active;
+    border-color: @bg;
+}
 
 label {
-    color: white;
+    color: @text;
     font-size: 13;
 }
 
@@ -136,7 +139,7 @@ scrollbar slider {
 }
 
 textview .time {
-    color: grey;
+    color: @lines;
 }
 
 .popup {
@@ -144,8 +147,8 @@ textview .time {
 }
 
 .dialog {
-    border: #13181C;
-    background-color: #13181C;
+    border: @bg;
+    background-color: @bg;
 }
 
 .dialog button {
@@ -179,11 +182,11 @@ textview .time {
 }
 
 .fan_slider {
-    color: white;
+    color: @text;
 }
 
 .message_popup {
-    border-bottom-color: white;
+    border-bottom-color: @lines;
 }
 
 .numpad_tleft, .numpad_top, .numpad_tright, .numpad_left, .numpad_button, .numpad_right, .numpad_bleft, .numpad_bottom, .numpad_bright {
