@@ -1,67 +1,86 @@
+@define-color color1 #ED6500;
+@define-color color2 #B10080;
+@define-color color3 #009384;
+@define-color color4 #A7E100;
+@define-color bg #13181C;
+@define-color active #324A5E;
+@define-color echo #007D70;
+@define-color error #981E1F;
+@define-color warning #F9A825;
+@define-color warning-text #434343;
+@define-color text white;
+@define-color text-inv black;
+@define-color lines #cccccc;
+@define-color switch-scale-bg #3584E4;
+
 * {
-    color: white;
+    color: @text;
 }
 
+junction,
 list row,
 treeview.view,
+combobox arrow,
 window {
-    background-color: #13181C;
+    background-color: @bg;
 }
 
 button {
-    background-color: #13181C;
+    background-color: @bg;
 }
 
 button:active {
-    background-color: #304C62;
+    background-color: @active;
 }
 
 .button_active {
-    background-color: #20303D;
+    background-color: @active;
     border-radius: 1em;
 }
 
 button.color1 {
-    border-bottom-color: #ED6500;
+    border-bottom-color: @color1;
 }
 
 button.color2 {
-    border-bottom-color: #B10080;
+    border-bottom-color: @color2;
 }
 
 button.color3 {
-    border-bottom-color: #009384;
+    border-bottom-color: @color3;
 }
 
 button.color4 {
-    border-bottom-color: #A7E100;
+    border-bottom-color: @color4;
 }
 
 button.active {
-    background-color: #20303D;
+    background-color: @active;
 }
 
+.active image,
 button.update {
-    background: #009384;
-    border-color: #009384;
+    background: @color3;
+    border-color: @color3;
 }
 
 button.invalid {
-    background: #e61e1e;
-    border-color: #e61e1e;
+    background: @error;
+    border-color: @error;
 }
 
 combobox box button {
-    border-color: #cccccc;
+    border-color: @lines;
 }
 
 treeview.view check,
 switch {
-    background-color: #20292F;
+    background-color: @active;
 }
+
 treeview.view check:checked,
 switch:checked {
-    background-color: #3584e4;
+    background-color: @switch-scale-bg;
 }
 
 entry {
@@ -80,37 +99,40 @@ label {
 }
 
 menu {
-    background-color: #13181C;
-    border-color: #cccccc;
+    background-color: @bg;
+    border-color: @lines;
 }
 
 menuitem {
-    background-color: #13181C;
-    border-color: #cccccc;
+    background-color: @bg;
+    border-color: @lines;
 }
 
 trough {
-    background-color: #404E57;
-    color: white;
-    border-color: black;
+    background-color: @active;
+    color: @text;
+    border-color: @text-inv;
 }
 
-trough highlight, trough progress {
-    background-color: #3584e4;
-    color: white;
-    border-color: black;
+trough highlight,
+trough progress {
+    background-color: @switch-scale-bg;
+    color: @text;
+    border-color: @text-inv;
 }
 
 scale-mark {
-    color: white;
+    color: @text;
 }
 
-scrollbar, scrollbar button, scrollbar trough {
-    background-color: #13181C;
+scrollbar,
+scrollbar button,
+scrollbar trough {
+    background-color: @bg;
 }
 
 scrollbar slider {
-    background-color: #404E57;
+    background-color: @active;
 }
 
 textview .time {
@@ -189,25 +211,22 @@ textview .time {
     border-top-color: #ccc;
 }
 
-.message {
-    border-color: #981E1F;
-    color: white;
-    background-color: #981E1F;
+.dialog-warning {
+    border-bottom-color: @warning;
 }
 
-.message button {
-    background-color: white;
-    color: black;
+.dialog-info {
+    border-bottom-color: @color4;
 }
 
-.warning {
-    background-color: rgba(30, 204, 39, 0.7);
+.dialog-default {
+    border-bottom-color: @color3;
 }
 
-.error {
-    background-color: rgba(204, 30, 30, 0.7);
+.dialog-secondary {
+    border-bottom-color: @color2;
 }
 
-.keyboard_pad {
-    background-color: #13181C;
+.dialog-primary {
+    border-bottom-color: @color1;
 }
