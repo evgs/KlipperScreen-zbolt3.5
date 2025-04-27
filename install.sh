@@ -15,9 +15,11 @@ rm -rf $TARGET/$THEME
 cp -r $SPATH/$THEME "$TARGET/"
 sudo cp $SPATH/$THEME/settings.ini /etc/gtk-3.0/
 
-
-read -p "Enable this theme automatically (Y/N)? " -n 1 -r
+echo "This installer will change $KLIPPERSCREENCONF"
+echo "to enable this theme [z-bolt3.5] automatically"
+read -p "Proceed (Y/N)? " -n 1 -r
 echo
+
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   # 0 Create if not exist
