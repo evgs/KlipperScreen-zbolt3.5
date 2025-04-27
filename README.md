@@ -28,7 +28,7 @@ git clone https://github.com/evgs/KlipperScreen-zbolt3.5
 ~/KlipperScreen-zbolt3.5/install.sh
 ```
 
-Далее активировать установленную тему
+Далее активировать установленную тему, если не разрешили выполнить это действие в скрипте установщика
 
 More>KlipperScreen>Icon Theme>z-bolt3.5
 
