@@ -16,7 +16,7 @@ cp -r $SPATH/$THEME "$TARGET/"
 sudo cp $SPATH/$THEME/settings.ini /etc/gtk-3.0/
 
 
-read -p "Enable this theme (Y/N)? " -n 1 -r
+read -p "Enable this theme automatically (Y/N)? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
