@@ -15,6 +15,7 @@ rm -rf $TARGET/$THEME
 cp -r $SPATH/$THEME "$TARGET/"
 sudo cp $SPATH/$THEME/settings.ini /etc/gtk-3.0/
 
+echo "!!! Experimental !!!"
 echo "This installer will change $KLIPPERSCREENCONF"
 echo "to enable this theme [z-bolt3.5] automatically"
 read -p "Proceed (Y/N)? " -n 1 -r
